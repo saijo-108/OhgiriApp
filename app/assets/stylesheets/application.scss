@@ -2,3 +2,38 @@
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    height:100vh;
+    width: 100%;
+    min-height:100%;
+    background-image: image-url("wall.png");
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+
+.col-md-10 {
+    margin-top: 100px;
+}
+
+.text-right {
+    margin-top: 50px;
+}
+
+.btn-primary {
+    background-color:#44883f
+}
