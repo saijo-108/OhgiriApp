@@ -21,12 +21,12 @@
             <%= f.password_field :password_confirmation, class: 'form-control' %>
           </div>
           <div class='text-center'>
-            <%= f.submit '登録', class: 'btn btn-primary rounded-pill' %> 
+            <%= f.submit (t 'defaults.register'), class: 'btn btn-primary rounded-pill' %> 
           </div>
         <% end %>
         <div class='text-right'>
           アカウントをお持ちの方は
-          <%= link_to 'ログインへ', login_path %>
+          <%= link_to (t '.to_login_page'), login_path %>
         </div>
       </div>
     </div>
