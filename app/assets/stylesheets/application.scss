@@ -49,3 +49,53 @@ header {
 .dropdown-item {
     color: white;
 }
+
+.btn-search {
+    height: 38px;
+    background-color: rgb(45, 142, 223);
+    border-color: red;
+}
+
+.form-control {
+    border-color: red;
+}
+
+.bg-koruku {
+    width: 100%;
+    background-image: url(koruku.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.top-change {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.input-group {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.title-size {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.answer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgb(29, 9, 75);
+}
+
+.card {
+    background-color: rgb(241, 233, 233);
+    border-color: blue;
+}
+
+.card-position {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
