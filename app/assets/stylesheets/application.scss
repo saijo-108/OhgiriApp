@@ -24,6 +24,7 @@ body {
     margin: 0;
     padding: 0;
     height:100%;
+    background-color: rgb(234, 238, 176);
 }
 
 .col-md-10 {
@@ -61,15 +62,11 @@ header {
 }
 
 .bg-koruku {
-    width: 100%;
-    background-image: url(koruku.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-color: rgb(234, 238, 176);
 }
 
 .top-change {
-    padding-top: 6em;
+    padding-top: 2em;
     padding-bottom: 6em;
 }
 
@@ -97,5 +94,18 @@ header {
 
 .card-position {
     padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.list {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+.list-inline {
     margin-bottom: 0;
 }
