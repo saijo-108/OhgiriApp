@@ -1,12 +1,10 @@
 <%= form_with model: board, local: true do |f| %>
   <div class="form-group">
-    <%= f.label :title %>
-    <%= f.text_field :title, class: 'form-control' %>
+    <%= f.text_area :body, class: 'form-control', rows: 10, value: "Q." %>
   </div>
   <div class="form-group">
-    <%= f.label :body %>
-    <%= f.text_area :body, class: 'form-control', rows: 10 %>
+    <%= f.text_area :body, class: 'form-control', rows: 2, value: "A." %>
   </div>
 
-  <%= f.submit class: 'btn btn-primary' %>
+  <%= f.submit "回答", class: 'btn btn-primary' %>
 <% end %>
