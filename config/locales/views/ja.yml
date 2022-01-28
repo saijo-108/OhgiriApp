@@ -27,7 +27,7 @@ ja:
       password_forget: 'パスワードをお忘れの方はこちら'
   boards:
     show:
-      title: '大喜利詳細'
+      title: 'みんなの回答'
     index:
       title: '大喜利一覧'
     new:
