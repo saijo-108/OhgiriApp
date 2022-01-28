@@ -1,4 +1,3 @@
-@import 'top';
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
@@ -57,64 +56,9 @@ header {
     border-color: red;
 }
 
-.form-control {
-    border-color: red;
-}
-
-.bg-koruku {
-    background-color: rgb(234, 238, 176);
-}
-
-.top-change {
-    padding-top: 2em;
-    padding-bottom: 6em;
-}
-
-.input-group {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.title-size {
-    font-size: 3vw;
-    font-weight: bold;
-}
-
-.answer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: rgb(29, 9, 75);
-}
-
-.card {
-    background-color: rgb(241, 233, 233);
-    border-color: blue;
-}
-
-.card-position {
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
 
 .list {
     list-style-type: none;
     margin-bottom: 0;
 }
 
-.card-body {
-    padding-bottom: 0;
-}
-
-.list-inline {
-    margin-bottom: 0;
-}
-
-.form-group1 {
-    margin-top: 15px;
-}
-
-.form-group2 {
-    margin-top: 80px;
-    margin-bottom: 20px;
-}

@@ -1,3 +1,6 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'comments/comment' %>
+<% end %>
 <tr id="comment-<%= comment.id %>">
   <td>
     <h3 class="small"><%= comment.user.nick_name %></h3>
