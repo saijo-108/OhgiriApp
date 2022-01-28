@@ -7,7 +7,7 @@ class UserSessionsController < ApplicationController
     if @user
       redirect_back_or_to boards_path, success: t('.success')
     else
-      flash.now[:danger] = t('.fail')
+      flash.now[:danger] = "メールアドレス、もしくはパスワードが間違っています"
       render :new
     end
   end

@@ -1,5 +1,6 @@
 ja:
   defaults:
+    post: '投稿'
     login: 'ログイン'
     register: '登録'
     logout: 'ログアウト'
@@ -25,6 +26,8 @@ ja:
       to_register_page: '登録ページへ'
       password_forget: 'パスワードをお忘れの方はこちら'
   boards:
+    show:
+      title: '大喜利詳細'
     index:
       title: '大喜利一覧'
     new:
