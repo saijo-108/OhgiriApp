@@ -1,0 +1,39 @@
+ja:
+  defaults:
+    post: '投稿'
+    login: 'ログイン'
+    register: '登録'
+    logout: 'ログアウト'
+    message:
+      require_login: 'ログインしてください'
+      created: "%{item}を作成しました"
+      not_created: "%{item}を作成できませんでした"
+  users:
+    create:
+      success: 'アカウント登録が完了しました'
+      fail: 'アカウント登録に失敗しました'
+    new:
+      title: 'ユーザー登録'
+      to_login_page: 'ログインへ'
+  user_sessions:
+    create:
+      success: 'ログインしました'
+      fail: 'ログインに失敗しました'
+    destroy:
+      success: 'ログアウトしました'
+    new:
+      title: 'ログイン'
+      to_register_page: '登録ページへ'
+      password_forget: 'パスワードをお忘れの方はこちら'
+  boards:
+    show:
+      title: 'みんなの回答'
+    index:
+      title: '大喜利一覧'
+    new:
+      title: '大喜利作成'
+    bookmarks:
+      title: 'お気に大喜利一覧'
+  profiles:
+    show:
+      title: 'プロフィール'

@@ -1,5 +1,8 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'shared/before' %>
+<% end %>
 <header>
-  <nav class="navbar navbar-expand-lg navigation navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navigation navbar-dark bg-dark">
 
     <%= link_to root_path, class: 'navbar-brand' do %>
       <%= image_tag 'logo.png' %>
@@ -12,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto main-nav align-items-center">
         <li class="nav-item">
-          <%= link_to 'ログイン', login_path ,class: 'nav-link' %>
+          <%= link_to (t 'defaults.login'), login_path ,class: 'nav-link' %>
         </li>
       </ul>
     </div>

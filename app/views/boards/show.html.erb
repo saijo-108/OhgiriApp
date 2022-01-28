@@ -1,0 +1,35 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'boards/show' %>
+<% end %>
+<% content_for(:title, t('.title')) %>
+<div class="container pt-5">
+  <div class="row mb-3">
+    <div class="col-lg-8 offset-lg-2">
+      <h1>お題〇〇番</h1>
+
+      <!-- 大喜利の内容 -->
+      <article class="card">
+        <div class="card-body">
+          <div class='row'>
+            <div class='col-md-9'>
+              <h3 class="d-inline"><%= @board.title %></h3>
+              <%= render 'crud_menus', board: @board %>
+              <ul class="list-inline">
+                <li class="list-inline-item">by <%= @board.user.nick_name %></li>
+                <li class="list-inline-item"><%= l @board.created_at, format: :long %></li>
+              </ul>
+            </div>
+          </div>
+          <p></p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <p>みんなの回答</p>
+
+  <!-- コメントフォーム -->
+  <%= render 'comments/form', { board: @board, comment: @comment } %>
+
+  <!-- コメントエリア -->
+  <%= render 'comments/comments', { comments: @comments } %>
+</div>

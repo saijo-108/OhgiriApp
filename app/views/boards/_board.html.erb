@@ -1,0 +1,26 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'boards/board' %>
+<% end %>
+<div class="col-sm-12 col-lg-4 mb-3">
+  <div id="board-id-<%= board.id %>">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          <%= link_to board.title, board_path(board) %>
+        </h4>
+        <%= render 'crud_menus', board: board %>
+        <ul class='mr10 float-right list'>
+          <li><a href="#">回答する</a></li>
+          <li><%= link_to "みんなの回答", board_path(board) %></li>
+        </ul>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <p>出題者:<%= board.user.nick_name %>さん</p>
+          <li class="list-inline-item">
+            <p>回答者: 5人</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

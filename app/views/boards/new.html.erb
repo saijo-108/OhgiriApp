@@ -1,0 +1,12 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'boards/new' %>
+<% end %>
+<% content_for(:title, t('.title')) %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <h3>お題</h3>
+      <%= render 'form', { board: @board } %>
+    </div>
+  </div>
+</div>

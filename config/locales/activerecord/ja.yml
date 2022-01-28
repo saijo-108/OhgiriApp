@@ -1,0 +1,17 @@
+ja:
+  activerecord:
+    models:
+      user: 'ユーザー'
+      board: '大喜利'
+      comment: 'コメント'
+    attributes:
+      user:
+        email: 'メールアドレス'
+        password: 'パスワード'
+        password_confirmation: 'パスワード確認'
+        nick_name: 'ニックネーム'
+      board:
+        title: '大喜利'
+        body: '回答'
+      comment:
+        body: 'コメント'

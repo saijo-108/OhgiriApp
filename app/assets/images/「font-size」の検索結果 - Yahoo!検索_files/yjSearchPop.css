@@ -1,0 +1,63 @@
+#yjSearchPop, #yjSearchPop a {
+    display: block;
+    margin: 0;
+    background-color: transparent;
+}
+
+#yjSearchPop {
+    width: 130px;
+    height: 43px;
+    padding: 0;
+    text-align: left;
+    position: absolute;
+    -webkit-animation: fade 0.25s ease-out 1;
+    animation: fade 0.25s ease-out 1;
+    background-image: url(../../img/pop_spr_02.png);
+    background-repeat: no-repeat;
+    z-index: 99999999;
+}
+
+@-webkit-keyframes fade {
+    0%   {
+        opacity: 0;
+        -webkit-transform: translate(0px, -4px);
+        transform: translate(0px, -4px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes fade {
+    0%   {
+        opacity: 0;
+        -webkit-transform: translate(0px, -4px);
+        -moz-transform: translate(0px, -4px);
+        transform: translate(0px, -4px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
+
+#yjSearchPop a {
+    height: 26px;
+    padding: 0.83em 0 0 37px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, Arial;
+    text-decoration: none;
+    line-height: 1;
+}
+
+#yjSearchPop a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+#yjSearchPop:hover { opacity: 0.96; }

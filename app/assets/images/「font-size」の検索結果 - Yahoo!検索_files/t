@@ -1,0 +1,5 @@
+if( document.domain.match( new RegExp("(search.yahoo.co.jp)$","i") ) ){
+  document.write("<img width=1 height=1 style=\"position:absolute;\" alt=\"\" src=\"https://b16.yahoo.co.jp/b?P=JnFiLzIwMy7dAxSsYWd.OgAANjAuMWHs6hIABn0N&T=1420ssgcn%2fX%3d1642916370%2fE%3d2114736003%2fR%3djp_gspweb%2fK%3d5%2fV%3d8.1%2fW%3d0R%2fY%3djp%2fF%3d886867991%2fQ%3d-1%2fS%3d1%2fJ%3d3c93ad8c&U=125f6bmfa%2fN%3dMTYzNTIwMy4-%2fC%3d-2%2fD%3dZ%2fB%3d-2&Q=1\">");
+} else {
+  console.log("error: domain param and document.domain do not match");
+}

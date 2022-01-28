@@ -1,9 +1,14 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'users/new' %>
+<% end %>
+<% content_for(:title, t('.title')) %>
 <div class="box">
   <div class="container">
     <div class="row">
       <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
         <h1>アカウント新規登録</h1>
         <%= form_with model: @user, local: true do |f| %>
+          <%= render 'shared/error_messages', object: f.object %>
           <div class="form-group">
             <%= f.label :nick_name %>
             <%= f.text_field :nick_name, class: 'form-control' %>
@@ -21,12 +26,12 @@
             <%= f.password_field :password_confirmation, class: 'form-control' %>
           </div>
           <div class='text-center'>
-            <%= f.submit '登録', class: 'btn btn-primary rounded-pill' %> 
+            <%= f.submit (t 'defaults.register'), class: 'btn btn-primary rounded-pill' %> 
           </div>
         <% end %>
         <div class='text-right'>
           アカウントをお持ちの方は
-          <%= link_to 'ログインへ', login_path %>
+          <%= link_to (t '.to_login_page'), login_path %>
         </div>
       </div>
     </div>
