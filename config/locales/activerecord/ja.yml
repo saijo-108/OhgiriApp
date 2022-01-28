@@ -3,6 +3,7 @@ ja:
     models:
       user: 'ユーザー'
       board: '大喜利'
+      comment: 'コメント'
     attributes:
       user:
         email: 'メールアドレス'
@@ -10,5 +11,7 @@ ja:
         password_confirmation: 'パスワード確認'
         nick_name: 'ニックネーム'
       board:
-        title: 'タイトル'
-        body: '本文'
+        title: '大喜利'
+        body: '回答'
+      comment:
+        body: 'コメント'

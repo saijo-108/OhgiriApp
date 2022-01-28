@@ -3,13 +3,12 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">
-            <%= board.title %>
-          </a>
+          <%= link_to board.title, board_path(board) %>
         </h4>
+        <%= render 'crud_menus', board: board %>
         <ul class='mr10 float-right list'>
           <li><a href="#">回答する</a></li>
-          <li><a href="#">他の人の回答</a></li>
+          <li><%= link_to "みんなの回答", board_path(board) %></li>
         </ul>
         <ul class="list-inline">
           <li class="list-inline-item">
